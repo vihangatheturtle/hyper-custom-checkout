@@ -63,8 +63,7 @@ export default function Purchase({ release }) {
         <div className="card-body">
 
           <div>
-            You can modify this purchase page however you like stylistically. The only important part is that the
-            inputs are linked up to the form!
+            Poggers
           </div>
           <hr />
           <Formik
