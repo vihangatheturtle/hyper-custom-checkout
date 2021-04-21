@@ -63,7 +63,7 @@ export default function Purchase({ release }) {
         <div className="card-body">
 
           <div>
-            Poggers
+            Yay
           </div>
           <hr />
           <Formik
