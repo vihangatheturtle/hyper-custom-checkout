@@ -58,7 +58,7 @@ export default function Purchase({ release }) {
     <div className="min-vh-100 bg-dark">
       <div className="" style={{ maxWidth: '28rem' }}>
 	    <ul style="list-style-type: none;">
-		  <li class="left"><img src="https://cosmosbots.com/csmsLogo.png" id="logo"></img></li>
+		  <li className="left"><img src="https://cosmosbots.com/csmsLogo.png" id="logo"></img></li>
 		</ul>
         <p className="headerTitle">Purchase</p>
         <div className="">
