@@ -58,7 +58,7 @@ export default function Purchase({ release }) {
     <div className="min-vh-100 d-flex align-items-center p-3 bg-light">
       <div className="card rounded-lg mx-auto border" style={{ maxWidth: '28rem' }}>
         <div className="card-header bg-white py-3">
-          <p style="transition:.4s;position:absolute;color:white;font-family:arial;font-weight:bold;font-size:69px;padding-top:56px;padding-left:48px;">Purchase</ >
+          <p style="transition:.4s;position:absolute;color:white;font-family:arial;font-weight:bold;font-size:69px;padding-top:56px;padding-left:48px;">Purchase</p>
         </div>
         <div className="card-body">
 
