@@ -58,9 +58,7 @@ export default function Purchase({ release }) {
   return (
     <div className="min-vh-100 bg-dark">
       <div className="" style={{ maxWidth: '28rem' }}>
-	    <ul style="list-style-type: none;">
-		  <li className="left"><image src="../assets/csmsLogo.png" id="logo"></image></li>
-		</ul>
+	    <image className="left" src="../assets/csmsLogo.png" id="logo"></image>
         <p className="headerTitle">Purchase</p>
         <div className="">
 
