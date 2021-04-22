@@ -58,7 +58,7 @@ export default function Purchase({ release }) {
     <div className="min-vh-100 bg-dark">
       <div className="" style={{ maxWidth: '28rem' }}>
         <p className="headerTitle">Purchase</p>
-        <div className="card-body">
+        <div className="">
 
           <p className="headerSubTitle">
             You are about to purchase a Cosmos AIO beta key. This is a pre-release key and will only be usable once Cosmos AIO releases.
