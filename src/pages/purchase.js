@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 import { Field, Form, Formik } from 'formik';
 import { createCheckout, pollCheckout } from '../services/checkout.service';
 import { retrieveRelease } from '../services/release.service';
-import 'style.css'
+import '../style.css'
 
 export default function Purchase({ release }) {
   const stripe = useStripe();
