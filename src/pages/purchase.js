@@ -5,6 +5,7 @@ import { useRouter } from 'next/router';
 import { Field, Form, Formik } from 'formik';
 import { createCheckout, pollCheckout } from '../services/checkout.service';
 import { retrieveRelease } from '../services/release.service';
+import 'style.css'
 
 export default function Purchase({ release }) {
   const stripe = useStripe();
@@ -55,7 +56,6 @@ export default function Purchase({ release }) {
   }
 
   return (
-    <link rel="stylesheet" href="style.css">
     <div className="min-vh-100 d-flex align-items-center p-3 bg-light">
       <div className="card rounded-lg mx-auto border" style={{ maxWidth: '28rem' }}>
         <div className="card-header bg-white py-3">
