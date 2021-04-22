@@ -59,11 +59,6 @@ export default function Purchase({ release }) {
       <div className="" style={{ maxWidth: '28rem' }}>
 	    <ul style="list-style-type: none;">
 		  <li class="left"><img src="https://cosmosbots.com/csmsLogo.png" id="logo"></img></li>
-		  <li class="right"><div id="hamburger" onclick="hamTransform(this)">
-		  <div class="bar1"></div>
-		  <div class="bar2"></div>
-		  <div class="bar3"></div>
-		  </div></li>
 		</ul>
         <p className="headerTitle">Purchase</p>
         <div className="">
