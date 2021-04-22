@@ -55,8 +55,8 @@ export default function Purchase({ release }) {
   }
 
   return (
-    <div className="bg-dark">
-      <div className="mx-auto border" style={{ maxWidth: '28rem' }}>
+    <div className="min-vh-100 bg-dark">
+      <div className="mx-auto" style={{ maxWidth: '28rem' }}>
         <div className="card-header bg-white py-3">
           <p className="headerTitle">Purchase</p>
         </div>
