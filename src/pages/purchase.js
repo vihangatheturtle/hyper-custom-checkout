@@ -62,10 +62,10 @@ export default function Purchase({ release }) {
         </div>
         <div className="card-body">
 
-          <div>
+          <p className="headerSubTitle">
             You can modify this purchase page however you like stylistically. The only important part is that the
             inputs are linked up to the form!
-          </div>
+          </p>
           <hr />
           <Formik
             initialValues={{
