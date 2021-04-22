@@ -5,6 +5,7 @@ import { useRouter } from 'next/router';
 import { Field, Form, Formik } from 'formik';
 import { createCheckout, pollCheckout } from '../services/checkout.service';
 import { retrieveRelease } from '../services/release.service';
+import Image from 'next/image'
 
 export default function Purchase({ release }) {
   const stripe = useStripe();
@@ -58,7 +59,7 @@ export default function Purchase({ release }) {
     <div className="min-vh-100 bg-dark">
       <div className="" style={{ maxWidth: '28rem' }}>
 	    <ul style="list-style-type: none;">
-		  <li className="left"><img src="https://cosmosbots.com/csmsLogo.png" id="logo"></img></li>
+		  <li className="left"><image src="https://cosmosbots.com/csmsLogo.png" id="logo"></image></li>
 		</ul>
         <p className="headerTitle">Purchase</p>
         <div className="">
