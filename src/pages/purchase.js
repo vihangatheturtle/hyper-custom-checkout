@@ -63,7 +63,7 @@ export default function Purchase({ release }) {
         <div className="card-body">
 
           <p className="headerSubTitle">
-            You are about to purchase a Cosmos AIO beta key. This key will only be usable once Cosmos AIO releases.
+            You are about to purchase a Cosmos AIO beta key. This is a prerelease key and will only be usable once Cosmos AIO releases.
 			<Formik
             initialValues={{
               name: '',
