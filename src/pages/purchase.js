@@ -58,8 +58,8 @@ export default function Purchase({ release }) {
     <div className="min-vh-100 bg-dark">
       <div className="" style={{ maxWidth: '28rem' }}>
 	    <ul style="list-style-type: none;">
-		  <li class="left"><img src="https://cosmosbots.com/csmsLogo.png" style="transition:.4s;height:56px;padding-left:28px;padding-top:25px;opacity:0;" id="logo"></img></li>
-		  <li class="right"><div style="transition:.4s;height:56px;padding-right:28px;padding-top:25px;opacity:0;position:absolute;z-index:100;" id="hamburger" onclick="hamTransform(this)">
+		  <li class="left"><img src="https://cosmosbots.com/csmsLogo.png" id="logo"></img></li>
+		  <li class="right"><div id="hamburger" onclick="hamTransform(this)">
 		  <div class="bar1"></div>
 		  <div class="bar2"></div>
 		  <div class="bar3"></div>

@@ -1,3 +1,21 @@
+#logo {
+	transition:.4s!important;
+	height:56px!important;
+	padding-left:28px!important;
+	padding-top:25px!important;
+	opacity:0!important;
+}
+
+#hamburger {
+	transition:.4s!important;
+	height:56px!important;
+	padding-right:28px!important;
+	padding-top:25px!important;
+	opacity:0!important;
+	position:absolute!important;
+	z-index:100!important;
+}
+
 ul {
   margin: 0!important;
   padding: 0!important;
