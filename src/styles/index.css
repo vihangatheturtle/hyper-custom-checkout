@@ -1,3 +1,25 @@
+.headerTitle {
+	transition:.4s !important;
+	position:absolute !important;
+	color:white !important;
+	font-family:arial !important;
+	font-weight:bold !important;
+	font-size:69px !important;
+	padding-top:56px !important;
+	padding-left:48px !important;
+}
+
+.headerSubTitle {
+	transition:.4s !important;
+	position:absolute !important;
+	color:white !important;
+	font-family:arial !important;
+	font-size:18px !important;
+	padding-top:200px !important;
+	padding-left:56px !important;
+	width:560px !important;
+}
+
 .bg-dark {
   background-color: #191925 !important;
 }
