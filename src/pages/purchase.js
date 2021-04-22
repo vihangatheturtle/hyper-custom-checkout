@@ -63,11 +63,8 @@ export default function Purchase({ release }) {
         <div className="card-body">
 
           <p className="headerSubTitle">
-            You can modify this purchase page however you like stylistically. The only important part is that the
-            inputs are linked up to the form!
-          </p>
-          <hr />
-          <Formik
+            You are about to purchase a Cosmos AIO beta key. This key will only be usable once Cosmos AIO releases.
+			<Formik
             initialValues={{
               name: '',
               email: '',
@@ -105,6 +102,7 @@ export default function Purchase({ release }) {
               </Form>
             )}
           </Formik>
+          </p>
         </div>
       </div>
     </div>
