@@ -1,3 +1,14 @@
+.headerSubTitle {
+	transition:.4s;
+	position:absolute;
+	color:white;
+	font-family:arial;
+	font-size:18px;
+	padding-top:200px;
+	padding-left:56px;
+	width:560px;
+}
+
 .headerTitle {
 	transition:.4s;
 	position:absolute;
