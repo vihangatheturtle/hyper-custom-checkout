@@ -59,8 +59,10 @@ export default function Purchase({ release }) {
     <div className="min-vh-100 d-flex align-items-center p-3">
       <div className="card rounded-lg mx-auto border" style={{ maxWidth: '28rem' }}>
         <div className="card-header bg-white py-3">
+          <button type="button" className="close" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
           <h4 className="mb-0">Purchase</h4>
-          <button type="button" className="btn-close float-right" aria-label="Close"></button>
         </div>
         <div className="card-body">
 
