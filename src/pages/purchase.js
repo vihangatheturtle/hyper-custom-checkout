@@ -57,7 +57,7 @@ export default function Purchase({ release }) {
 
   return (
     <div className="min-vh-100 d-flex align-items-center p-3 bg-light">
-      <div className="" style={{ maxWidth: '28rem' }}>
+      <div className="card rounded-lg" style={{ maxWidth: '28rem' }}>
         <p className="headerTitle">Purchase</p>
         <div className="">
 
