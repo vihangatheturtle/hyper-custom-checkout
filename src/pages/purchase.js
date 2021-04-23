@@ -11,6 +11,10 @@ export default function Purchase({ release }) {
   const router = useRouter();
   const elements = useElements();
 
+  function closeModal() {
+    parent.postMessage("FPCclose", "*");
+  }
+  
   async function handleSubmit(values, actions) {
     const cardElement = elements.getElement('card');
 
@@ -57,7 +61,6 @@ export default function Purchase({ release }) {
   return (
   <body className="bg-transparent">
     <script dangerouslySetInnerHTML={{ __html: `parent.postMessage("FPCprobe", "*");` }} />
-    <script dangerouslySetInnerHTML={{ __html: `function closeModal() { parent.postMessage("FPCclose", "*"); }` }} />
     <div className="min-vh-100 d-flex align-items-center p-3">
       <div className="card rounded-lg mx-auto border" style={{ maxWidth: '28rem' }}>
         <div className="card-header bg-white py-3">
