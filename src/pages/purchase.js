@@ -60,6 +60,7 @@ export default function Purchase({ release }) {
       <div className="card rounded-lg mx-auto border" style={{ maxWidth: '28rem' }}>
         <div className="card-header bg-white py-3">
           <h4 className="mb-0">Purchase</h4>
+          <button type="button" class="btn-close" aria-label="Close"></button>
         </div>
         <div className="card-body">
 
