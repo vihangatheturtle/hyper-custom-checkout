@@ -57,15 +57,17 @@ export default function Purchase({ release }) {
 
   return (
     <div className="min-vh-100 d-flex p-3 bg-light">
-      <div className="card rounded-lg mx-auto border" style={{ maxWidth: '28rem' }}>
-	<div className="card-header bg-white py-3">
-	    <h4 className="headerTitle">Purchase</h4>
-	</div>
+      <div className="card rounded-lg border" style={{ maxWidth: '28rem' }}>
+        <div className="card-header bg-white py-3">
+          <h4 className="mb-0">Purchase</h4>
+        </div>
         <div className="card-body">
 
-          <p className="headerSubTitle">
+          <div>
             You are about to purchase a Cosmos AIO beta key. This is a pre-release key and will only be usable once Cosmos AIO releases.
-			<Formik
+          </div>
+          <hr />
+          <Formik
             initialValues={{
               name: '',
               email: '',
@@ -103,7 +105,6 @@ export default function Purchase({ release }) {
               </Form>
             )}
           </Formik>
-          </p>
         </div>
       </div>
     </div>
