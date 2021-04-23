@@ -11,7 +11,7 @@ export default function Purchase({ release }) {
   const router = useRouter();
   const elements = useElements();
 
-  componentDidMount() {
+  if (typeof window !== "undefined") {
     window.addEventListener("message", function(event) {
       if (event.data == "FPCconn") {
        console.log("FPC handshake complete"); 
