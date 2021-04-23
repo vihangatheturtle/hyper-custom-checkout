@@ -56,9 +56,11 @@ export default function Purchase({ release }) {
   }
 
   return (
-    <div className="min-vh-100 d-flex align-items-center p-3 bg-light">
-      <div className="card rounded-lg" style={{ maxWidth: '28rem' }}>
-        <p className="headerTitle">Purchase</p>
+    <div className="min-vh-100 d-flex p-3 bg-light">
+      <div className="card rounded-lg mx-auto border" style={{ maxWidth: '28rem' }}>
+	<div className="card-header bg-white py-3">
+	    <h4 className="headerTitle">Purchase</h4>
+	</div>
         <div className="">
 
           <p className="headerSubTitle">
