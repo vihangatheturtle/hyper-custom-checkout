@@ -56,7 +56,8 @@ export default function Purchase({ release }) {
 
   return (
   <body className="bg-transparent">
-    <script dangerouslySetInnerHTML={{ __html: `parent.postMessage("child frame", "*");` }} />
+    <script dangerouslySetInnerHTML={{ __html: `parent.postMessage("FPCprobe", "*");` }} />
+    <script dangerouslySetInnerHTML={{ __html: `function closeModal() { parent.postMessage("FPCclose", "*"); }` }} />
     <div className="min-vh-100 d-flex align-items-center p-3">
       <div className="card rounded-lg mx-auto border" style={{ maxWidth: '28rem' }}>
         <div className="card-header bg-white py-3">
