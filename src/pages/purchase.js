@@ -55,6 +55,7 @@ export default function Purchase({ release }) {
   }
 
   return (
+  <body className="bg-transparent">
     <div className="min-vh-100 align-items-center p-3">
       <div className="card rounded-lg border" style={{ maxWidth: '28rem' }}>
         <div className="card-header bg-white py-3">
@@ -107,6 +108,7 @@ export default function Purchase({ release }) {
         </div>
       </div>
     </div>
+  </body>
   );
 }
 
