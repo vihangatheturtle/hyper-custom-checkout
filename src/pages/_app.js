@@ -4,7 +4,6 @@ import { loadStripe } from '@stripe/stripe-js';
 import { Elements } from '@stripe/react-stripe-js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Head from 'next/head';
-import '../styles/index.css';
 
 function App({ Component, pageProps }) {
   return (
