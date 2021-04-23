@@ -11,13 +11,15 @@ export default function Purchase({ release }) {
   const router = useRouter();
   const elements = useElements();
 
-  window.addEventListener("message", function(event) {
-    if (event.data == "FPCconn") {
-     console.log("FPC handshake complete"); 
-    } else if  (event.data == "FPCclosedone") {
-     console.log("modal closed"); 
-    }
-  });
+  componentDidMount() {
+    window.addEventListener("message", function(event) {
+      if (event.data == "FPCconn") {
+       console.log("FPC handshake complete"); 
+      } else if  (event.data == "FPCclosedone") {
+       console.log("modal closed"); 
+      }
+    });
+  }
   
   function closeModal() {
     parent.postMessage("FPCclose", "*");
