@@ -5,7 +5,6 @@ import { useRouter } from 'next/router';
 import { Field, Form, Formik } from 'formik';
 import { createCheckout, pollCheckout } from '../services/checkout.service';
 import { retrieveRelease } from '../services/release.service';
-import Image from 'next/image'
 
 export default function Purchase({ release }) {
   const stripe = useStripe();
@@ -56,7 +55,7 @@ export default function Purchase({ release }) {
   }
 
   return (
-    <div className="min-vh-100 d-flex p-3 bg-light">
+    <div className="min-vh-100 d-flex align-items-center p-3 bg-light">
       <div className="card rounded-lg mx-auto border" style={{ maxWidth: '28rem' }}>
         <div className="card-header bg-white py-3">
           <h4 className="mb-0">Purchase</h4>
@@ -64,7 +63,8 @@ export default function Purchase({ release }) {
         <div className="card-body">
 
           <div>
-            You are about to purchase a Cosmos AIO beta key. This is a pre-release key and will only be usable once Cosmos AIO releases.
+            You can modify this purchase page however you like stylistically. The only important part is that the
+            inputs are linked up to the form!
           </div>
           <hr />
           <Formik
