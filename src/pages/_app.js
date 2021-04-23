@@ -9,7 +9,7 @@ function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <script src="https://hyper.co/js/power.js" />
+        
       </Head>
       <Elements stripe={loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY)}>
         <Component {...pageProps} />
