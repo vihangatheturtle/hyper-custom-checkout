@@ -56,9 +56,8 @@ export default function Purchase({ release }) {
   }
 
   return (
-    <div className="min-vh-100 bg-dark">
+    <div className="min-vh-100 d-flex align-items-center p-3 bg-light">
       <div className="" style={{ maxWidth: '28rem' }}>
-		<image className="left" width={56} height={56} src="https://cosmosbots.com/csmsLogo.png" id="logo"></image>
         <p className="headerTitle">Purchase</p>
         <div className="">
 
