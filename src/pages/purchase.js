@@ -14,7 +14,7 @@ export default function Purchase({ release }) {
   window.addEventListener("message", function(event) {
     if (event.data == "FPCconn") {
      console.log("FPC handshake complete"); 
-    } else if  (event.data == "FPCconn") {
+    } else if  (event.data == "FPCclosedone") {
      console.log("modal closed"); 
     }
   });
