@@ -1,3 +1,7 @@
+.card {
+	border: none!important;
+}
+
 #logo {
 	transition:.4s!important;
 	height:56px!important;
