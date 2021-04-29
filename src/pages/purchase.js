@@ -79,7 +79,7 @@ export default function Purchase({ release }) {
           </button>
           <h4 className="mb-0">Purchase</h4>
         </div>
-        <div className="card-body">
+        <div className="card-body bg-dark">
 
           <div>
             You are about to purchase a Cosmos AIO beta key. This is a pre-release key and will only be usable once Cosmos AIO releases.
