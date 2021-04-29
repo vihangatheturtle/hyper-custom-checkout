@@ -119,7 +119,7 @@ export default function Purchase({ release }) {
                     }} />
                   </div>
                 )}
-                <button className="btn btn-primary w-100" type="submit" disabled={isSubmitting}>Pay £{release.plan.amount / 100}</button>
+                <button className="btn btn-primary w-100" type="submit" disabled={isSubmitting}>Pay £{(release.plan.amount / 100).toFixed(2)}</button>
               </Form>
             )}
           </Formik>
