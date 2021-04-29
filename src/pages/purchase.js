@@ -56,7 +56,7 @@ export default function Purchase({ release }) {
       const checkout = await pollCheckout(id);
 
       if (checkout.status === 'succeeded') {
-        await router.push(`/success?license=${checkout.license.key}`);
+        await router.push(`https://dashboard.cosmosbots.com/purchase/success?license=${checkout.license.key}`);
       } else {
         const paymentIntent = checkout.payment_intent_client_secret && await stripe.retrievePaymentIntent(checkout.payment_intent_client_secret);
 
