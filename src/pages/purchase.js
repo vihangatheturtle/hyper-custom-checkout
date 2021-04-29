@@ -34,7 +34,7 @@ export default function Purchase({ release }) {
       billing_details: { name: values.name.trim(), email: values.email.trim() },
     }).then((result) => {
       if (result.error) {
-        alert(result.error.message);
+        console.log(result.error.message);
         actions.setSubmitting(false);
         return null;
       }
