@@ -73,7 +73,7 @@ export default function Purchase({ release }) {
     <script dangerouslySetInnerHTML={{ __html: `parent.postMessage("FPCprobe", "*");` }} />
     <div className="min-vh-100 d-flex align-items-center p-3">
       <div className="card rounded-lg mx-auto border" style={{ maxWidth: '28rem' }}>
-        <div className="card-header bg-white py-3">
+        <div className="card-header bg-dark py-3">
           <button type="button" className="close" aria-label="Close" onClick={closeModal}>
             <span aria-hidden="true">&times;</span>
           </button>
