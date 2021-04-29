@@ -35,6 +35,9 @@ export default function Purchase({ release }) {
     }).then((result) => {
       if (result.error) {
         console.log(result.error.message);
+		if (result.error.message == "Your card was declined.") {
+			alert(result.error.message);
+		}
         actions.setSubmitting(false);
         return null;
       }
