@@ -5,13 +5,26 @@ import { useRouter } from 'next/router';
 import { Field, Form, Formik } from 'formik';
 import { createCheckout, pollCheckout } from '../services/checkout.service';
 import { retrieveRelease } from '../services/release.service';
-import Image from 'next/image'
 
 export default function Purchase({ release }) {
   const stripe = useStripe();
   const router = useRouter();
   const elements = useElements();
 
+  if (typeof window !== "undefined") {
+    window.addEventListener("message", function(event) {
+      if (event.data == "FPCconn") {
+       console.log("FPC handshake complete"); 
+      } else if  (event.data == "FPCclosedone") {
+       console.log("modal closed"); 
+      }
+    });
+  }
+  
+  function closeModal() {
+    parent.postMessage("FPCclose", "*");
+  }
+  
   async function handleSubmit(values, actions) {
     const cardElement = elements.getElement('card');
 
@@ -56,15 +69,23 @@ export default function Purchase({ release }) {
   }
 
   return (
-    <div className="min-vh-100 bg-dark">
-      <div className="" style={{ maxWidth: '28rem' }}>
-		<image className="left" width={56} height={56} src="https://cosmosbots.com/csmsLogo.png" id="logo"></image>
-        <p className="headerTitle">Purchase</p>
-        <div className="">
+  <body className="bg-transparent">
+    <script dangerouslySetInnerHTML={{ __html: `parent.postMessage("FPCprobe", "*");` }} />
+    <div className="min-vh-100 d-flex align-items-center p-3">
+      <div className="card rounded-lg mx-auto border" style={{ maxWidth: '28rem' }}>
+        <div className="card-header bg-white py-3">
+          <button type="button" className="close" aria-label="Close" onClick={closeModal}>
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 className="mb-0">Purchase</h4>
+        </div>
+        <div className="card-body">
 
-          <p className="headerSubTitle">
+          <div>
             You are about to purchase a Cosmos AIO beta key. This is a pre-release key and will only be usable once Cosmos AIO releases.
-			<Formik
+          </div>
+          <hr />
+          <Formik
             initialValues={{
               name: '',
               email: '',
@@ -102,10 +123,10 @@ export default function Purchase({ release }) {
               </Form>
             )}
           </Formik>
-          </p>
         </div>
       </div>
     </div>
+  </body>
   );
 }
 
