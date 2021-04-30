@@ -28,22 +28,24 @@ export default function Purchase({ release }) {
   async function handleSubmit(values, actions) {
     const cardElement = elements.getElement('card');
 
-    const paymentMethod = await stripe.createPaymentMethod({
-      type: 'card',
-      card: cardElement,
-      billing_details: { name: values.name.trim(), email: values.email.trim() },
-    }).then((result) => {
-      if (result.error) {
-        console.log(result.error.message);
-		if (result.error.message == "Your card was declined.") {
-			alert(result.error.message);
+	if(release.plan.type !== "free"){
+	  paymentMethod = await stripe.createPaymentMethod({
+		type: 'card',
+		card: cardElement,
+		billing_details: { name: values.name.trim(), email: values.email.trim() },
+	  }).then((result) => {
+		if (result.error) {
+			console.log(result.error.message);
+			if (result.error.message == "Your card was declined.") {
+				alert(result.error.message);
+			}
+			actions.setSubmitting(false);
+			return null;
 		}
-        actions.setSubmitting(false);
-        return null;
-      }
 
-      return result.paymentMethod;
-    });
+		return result.paymentMethod;
+	  });
+	}
 
     await createCheckout({
       release: release.id,
