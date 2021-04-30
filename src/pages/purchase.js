@@ -27,6 +27,7 @@ export default function Purchase({ release }) {
   
   async function handleSubmit(values, actions) {
     const cardElement = elements.getElement('card');
+	let paymentMethod;
 
 	if(release.plan.type !== "free"){
 	  paymentMethod = await stripe.createPaymentMethod({
