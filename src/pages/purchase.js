@@ -53,7 +53,7 @@ export default function Purchase({ release }) {
         name: values.name,
         email: values.email,
       },
-      payment_method: paymentMethod.id,
+      ...(paymentMethod && { payment_method: paymentMethod.id })
     }).then(async ({ id }) => {
       const checkout = await pollCheckout(id);
 
