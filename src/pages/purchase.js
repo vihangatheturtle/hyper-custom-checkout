@@ -137,7 +137,7 @@ export default function Purchase({ release }) {
 }
 
 export async function getServerSideProps({ query }) {
-  const release = await retrieveRelease("beta");
+  const release = await retrieveRelease("test");
 
   if (!release) return {
     redirect: {
